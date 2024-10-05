@@ -15,7 +15,7 @@ const container = (delay) => ({
 
 function Hero() {
   return (
-    <section className='flex min-h-screen flex-wrap items-center tracking-wide '>
+    <section className='flex min-h-screen flex-wrap items-center tracking-wide mt-10 '>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
