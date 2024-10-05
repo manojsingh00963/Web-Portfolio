@@ -14,12 +14,12 @@ import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
-import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+// import { RiReactjsLine } from "react-icons/ri";
+// import { TbBrandNextjs } from "react-icons/tb";
+// import { SiMongodb } from "react-icons/si";
+// import { DiRedis } from "react-icons/di";
+// import { FaNodeJs } from "react-icons/fa";
+// import { BiLogoPostgresql } from "react-icons/bi";
 // import { title } from "framer-motion/client";
 
 export const NAVIGATION_LINKS = [
@@ -99,38 +99,38 @@ export const BIO = [
   "I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects."
 ]
 
-export const SKILLS = [
-  {
-    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "React",
-    experience: "2+ years",
-  },
-  {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-    name: "Next.js",
-    experience: "1+ year",
-  },
-  {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
-  },
-  {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-    name: "Redis",
-    experience: "1+ year",
-  },
-  {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
-    experience: "2+ years",
-  },
-  {
-    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
-  },
-];
+// export const SKILLS = [
+//   {
+//     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+//     name: "React",
+//     experience: "2+ years",
+//   },
+//   {
+//     icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
+//     name: "Next.js",
+//     experience: "1+ year",
+//   },
+//   {
+//     icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+//     name: "MongoDB",
+//     experience: "1.5+ years",
+//   },
+//   {
+//     icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
+//     name: "Redis",
+//     experience: "1+ year",
+//   },
+//   {
+//     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
+//     name: "Node.js",
+//     experience: "2+ years",
+//   },
+//   {
+//     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
+//     name: "PostgreSQL",
+//     experience: "1+ year",
+//   },
+// ];
 
 export const EXPERIENCES = [
   {

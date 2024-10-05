@@ -2,7 +2,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Bio from './components/Bio';
-import Skills from './components/Skills';
+import SkillSection from './components/SkillSection';
 import WorkExperience from './components/WorkExperience';
 import EducationSection from './components/EducationSection';
 import ContactForm from './components/ContactForm';
@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Projects />
         <Bio />
-        <Skills />
+        <SkillSection/>
         <WorkExperience />
         <EducationSection />
         <ContactForm />
