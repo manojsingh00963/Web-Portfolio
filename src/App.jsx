@@ -7,7 +7,8 @@ import WorkExperience from './components/WorkExperience';
 import EducationSection from './components/EducationSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import BackToTopButton from './components/BackToTopButton'; // Importing the new component
+import BackToTopButton from './components/BackTotopButton';
+
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <EducationSection />
         <ContactForm />
         <Footer />
-        <BackToTopButton />
+        <BackToTopButton/>
       </div>
     </div>
   );
