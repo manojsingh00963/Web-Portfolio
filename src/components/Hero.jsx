@@ -33,7 +33,7 @@ function Hero() {
           initial="hidden"
           animate="visible"
           className="bg-gradient-to-r from-pink-300 via-sky-300 to-purple-500
-              bg-clip-text text-4xl tracking-tight text-transparent ml-80 ">
+              bg-clip-text text-4xl tracking-tight text-transparent ml-40 ">
           Full Stack Developer
         </motion.span>
         <motion.p
