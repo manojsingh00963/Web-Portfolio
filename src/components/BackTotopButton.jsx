@@ -28,7 +28,7 @@ function BackToTopButton() {
     <button
       ref={backToTopButtonRef}
       onClick={handleClick}
-      className="fixed bottom-14 right-10 p-3 bg-transparent border text-white rounded-full hidden"
+      className="fixed bottom-14 right-5 lg:right-10 p-2 lg:p-3 bg-transparent border text-white rounded-full hidden"
     >
     <GiReturnArrow/>
     </button>

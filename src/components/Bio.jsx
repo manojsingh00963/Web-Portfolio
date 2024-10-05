@@ -1,6 +1,5 @@
-import React from 'react'
-import { BIO } from '../constants'
-import { motion } from 'framer-motion'
+import { BIO } from '../constants';
+import { motion } from 'framer-motion';
 
 export default function Bio() {
   return (

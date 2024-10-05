@@ -1,6 +1,5 @@
-import React from 'react'
-import { EDUCATION } from '../constants'
-import { motion } from 'framer-motion'
+import { EDUCATION } from '../constants';
+import { motion } from 'framer-motion';
 
 export default function EducationSection() {
   return (

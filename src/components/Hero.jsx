@@ -1,6 +1,6 @@
-import mainImg from '../assets/main.jpg'
-import { HERO } from '../constants/index'
-import { motion } from 'framer-motion'
+import mainImg from '../assets/main.jpg';
+import { HERO } from '../constants/index';
+import { motion } from 'framer-motion';
 
 
 const container = (delay) => ({

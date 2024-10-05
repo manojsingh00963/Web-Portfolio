@@ -1,6 +1,5 @@
-import React from 'react'
-import { EXPERIENCES } from '../constants'
-import { motion } from 'framer-motion'
+;import { EXPERIENCES } from '../constants';
+import { motion } from 'framer-motion';
 
 function WorkExperience() {
   return (

@@ -5,7 +5,7 @@ import { FiSend } from "react-icons/fi";
 import { motion } from 'framer-motion'
 
 export default function ContactForm() {
-  const [fromData, setFromData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
@@ -17,18 +17,18 @@ export default function ContactForm() {
   // Handle change function
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFromData((prevState) => ({ ...prevState, [name]: value }));
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
   const validate = () => {
     let errors = {};
-    if (!fromData.name) errors.name = "Name is required";
-    if (!fromData.email) {
+    if (!formData.name) errors.name = "Name is required";
+    if (!formData.email) {
       errors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(fromData.email)) {
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errors.email = "Invalid email";
     }
-    if (!fromData.message) errors.message = "Message is required";
+    if (!formData.message) errors.message = "Message is required";
     return errors;
   };
 
@@ -44,12 +44,12 @@ export default function ContactForm() {
         .send(
           "service_xq4b9nl",
           "template_p6t3g0g",
-          fromData,
+          formData,
           "_jyI4fcQ0-EZyBA7D"
         )
         .then((response) => {
-          toast.success("Message sent successfully!");
-          setFromData({ name: "", email: "", message: "" });
+          toast.success("Message sent successfully!",response);
+          setFormData({ name: "", email: "", message: "" });
         })
         .catch((error) => {
           console.log("FAILED...", error);
@@ -84,7 +84,7 @@ export default function ContactForm() {
               type="text"
               id="name"
               name="name"
-              value={fromData.name}
+              value={formData.name}
               placeholder="Name"
               onChange={handleChange}
             />
@@ -102,7 +102,7 @@ export default function ContactForm() {
               type="email"
               id="email"
               name="email"
-              value={fromData.email}
+              value={formData.email}
               placeholder="Email"
               onChange={handleChange}
             />
@@ -121,7 +121,7 @@ export default function ContactForm() {
             rows={6}
             id="message"
             name="message"
-            value={fromData.message}
+            value={formData.message}
             placeholder="Message"
             onChange={handleChange}
           />

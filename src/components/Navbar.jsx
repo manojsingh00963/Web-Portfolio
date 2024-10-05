@@ -3,9 +3,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/Devmanoj.png";
 import { NAVIGATION_LINKS } from "../constants";
 //
-import { FaLinkedin, FaGithub, FaInstagramSquare } from 'react-icons/fa'
-import { FaXTwitter } from "react-icons/fa6";
-import { motion } from 'framer-motion';
+import { FaLinkedin, FaGithub, FaInstagramSquare } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";;
+import { motion } from 'framer-motion';;
 
 const iconVariants = (duration) => ({
   inital: { y: -10 },

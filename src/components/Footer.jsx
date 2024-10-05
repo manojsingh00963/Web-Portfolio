@@ -1,7 +1,6 @@
-import React from 'react'
-import logo from '../assets/Devmanoj.png'
-import { SOCIAL_MEDIA_LINKS } from '../constants'
-import { motion } from 'framer-motion'
+import logo from '../assets/Devmanoj.png';
+import { SOCIAL_MEDIA_LINKS } from '../constants';
+import { motion } from 'framer-motion';
 
 
 export default function Footer() {

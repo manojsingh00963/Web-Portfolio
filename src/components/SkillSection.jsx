@@ -1,4 +1,4 @@
-import { RiReactjsLine } from 'react-icons/ri'
+import { RiReactjsLine } from 'react-icons/ri';
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs, FaHtml5, FaCss3 } from "react-icons/fa";
@@ -24,14 +24,14 @@ const iconVariants = (duration) => ({
 
 function SkillSection() {
   return (
-    <div className="mx-2 w-full flex flex-col  px-4 py-2 lg:px-20 border-t-2 border-b-2 border-stone-50/30 ">
+    <div className="mx-2 w-full flex flex-col  px-4 py-2 lg:px-20 border-t-2 border-b-2 border-stone-50/30 " id='skills'>
 
     <div className=" py-10 pd-24 mb-8  " >
       <motion.h1
       whileInView={{opacity:1,y:0}} 
       initial={{opacity:0,y:-100}}
       transition={{duration:1.5}}
-      className=" my-20 text-center text-4xl ">Skill's</motion.h1>
+      className=" my-20 text-center text-4xl ">Skill&apos;s</motion.h1>
       <motion.div
       whileInView={{opacity:1,x:0}}
       initial={{opacity:0,x:-100}}
