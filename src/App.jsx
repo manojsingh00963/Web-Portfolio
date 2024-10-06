@@ -1,7 +1,7 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
-import Bio from './components/Bio';
+import About from './components/About';
 import SkillSection from './components/SkillSection';
 import WorkExperience from './components/WorkExperience';
 import EducationSection from './components/EducationSection';
@@ -19,7 +19,7 @@ function App() {
         <Hero />
         <Navbar />
         <Projects />
-        <Bio />
+        <About />
         <SkillSection/>
         <WorkExperience />
         <EducationSection />

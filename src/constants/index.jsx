@@ -24,7 +24,7 @@ import projectImage6 from "../assets/project6.jpeg";
 
 export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
-  { label: "Bio", href: "#bio" },
+  { label: "About", href: "#About" },
   { label: "Skills", href: "#skills" },
   { label: "Work Experience", href: "#work" },
   { label: "Education", href: "#education" },
@@ -35,7 +35,7 @@ export const HERO = {
   name: "Manoj singh",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
+    "I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
 };
 
 export const PROJECTS = [
@@ -69,7 +69,15 @@ export const PROJECTS = [
     description:
       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
     image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+    githubLink: "https://github.com/manojsingh00963/React_project/tree/main/My-Weather_App",
+  },
+  {
+    id: 5,
+    name: "Dictionary App",
+    description:
+      "A weather application that utilizes the Dictionary API to retrieve and present current weather data and forecasts for diverse locations, developed using React and styled-components.",
+    image: projectImage4,
+    githubLink: "https://github.com/manojsingh00963/React_project/tree/main/Dictionary-App",
   },
   {
     id: 5,
