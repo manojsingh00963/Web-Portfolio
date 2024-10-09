@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 
 function Projects() {
   return (
-    <section className="pt-20 border-b border-neutral-800 pb-20 " id="projects">
+    <section className="pt-20 border-t  border-b border-neutral-800 pb-20 " id="projects">
       <motion.h2 
       initial={{opacity:0,y:100}}
       whileInView={{opacity:1,y:0}}
       transition={{duration:1}}
-      className="mb-20 text-center text-3xl lg:text-4xl">Projects</motion.h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      className="mb-20 text-center text-neutral-400 text-3xl lg:text-4xl">Projects</motion.h2>
+      <div className=" mx-6 text-xs grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
         {PROJECTS.map((project) => (
           <motion.div
           initial={{opacity:0,scale:0.9}}
@@ -31,9 +31,9 @@ function Projects() {
             initial={{opacity:0}}
             whileHover={{opacity:1}}
             transition={{duration:0.5}}
-            className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100">
-              <h3 className="mb-2 text-xl">{project.name}</h3>
-              <p className="mb-12 p-4 text-center">{project.description}</p>
+            className="absolute inset-0 flex flex-col items-center justify-center text-neutral-800 opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100">
+              <h3 className="mb-1 text-sm">{project.name}</h3>
+              <p className="mb-2 p-4 text-center">{project.description}</p>
               <a
                 href={project.githubLink}
                 target="_blank"

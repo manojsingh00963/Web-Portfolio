@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className=" flex max-w-4xl flex-col gap-12 pt-10 " id="About">
+    <section className=" flex max-w-4xl flex-col  p-10 " id="About">
       <motion.h1
         whileInView={{ opacity: 1, z: 1 }}
         initial={{ opacity: 0, z: -100 }}

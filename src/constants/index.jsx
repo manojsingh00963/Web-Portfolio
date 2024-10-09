@@ -7,12 +7,15 @@ import {
   FaInstagram,
 } from "react-icons/fa6";
 
-import projectImage1 from "../assets/project1.jpeg";
-import projectImage2 from "../assets/project2.jpeg";
-import projectImage3 from "../assets/project3.jpeg";
-import projectImage4 from "../assets/project4.jpeg";
-import projectImage5 from "../assets/project5.jpeg";
-import projectImage6 from "../assets/project6.jpeg";
+import Dict from "../assets/img/Dict.jpg"
+import Todo from "../assets/img/Todo.jpg"
+import Weather from "../assets/img/Weather.jpg"
+import coder from "../assets/img/coder.jpg"
+import Blog from "../assets/img/Blog.jpg"
+import Chat from "../assets/img/Chat.jpg"
+import Ecommerce from "../assets/img/Ecommers.jpg"
+import Weather1 from "../assets/img/Final weather icon_.jpg"
+
 
 // import { RiReactjsLine } from "react-icons/ri";
 // import { TbBrandNextjs } from "react-icons/tb";
@@ -35,7 +38,7 @@ export const HERO = {
   name: "Manoj singh",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
+    "I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
 };
 
 export const PROJECTS = [
@@ -44,7 +47,7 @@ export const PROJECTS = [
     name: "Personal Portfolio",
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
-    image: projectImage1,
+    image: coder,
     githubLink: "https://github.com/user/personal-portfolio",
   },
   {
@@ -52,7 +55,7 @@ export const PROJECTS = [
     name: "E-Commerce Platform",
     description:
       "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
-    image: projectImage2,
+    image: Ecommerce,
     githubLink: "https://github.com/user/ecommerce-platform",
   },
   {
@@ -60,7 +63,7 @@ export const PROJECTS = [
     name: "Task Management Tool",
     description:
       "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
-    image: projectImage3,
+    image: Todo,
     githubLink: "https://github.com/user/task-management-tool",
   },
   {
@@ -68,7 +71,7 @@ export const PROJECTS = [
     name: "Weather App",
     description:
       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-    image: projectImage4,
+    image: Weather1,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/My-Weather_App",
   },
   {
@@ -76,7 +79,7 @@ export const PROJECTS = [
     name: "Dictionary App",
     description:
       "A weather application that utilizes the Dictionary API to retrieve and present current weather data and forecasts for diverse locations, developed using React and styled-components.",
-    image: projectImage4,
+    image: Dict,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/Dictionary-App",
   },
   {
@@ -84,7 +87,7 @@ export const PROJECTS = [
     name: "Blog Platform",
     description:
       "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-    image: projectImage5,
+    image: Blog,
     githubLink: "https://github.com/user/blog-platform",
   },
   {
@@ -92,7 +95,7 @@ export const PROJECTS = [
     name: "Chat Application",
     description:
       "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: projectImage6,
+    image: Chat,
     githubLink: "https://github.com/user/chat-application",
   },
 ];
@@ -104,7 +107,7 @@ export const PROJECTS = [
 // ];
 
 export const BIO = [
-  "I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects."
+  "I am a dedicated and versatile full-stack developer with a passion for creating efficient and user-friendly web applications. With 1 year of experience, I have worked with a variety of technologies, including React, Next.js, Node.js, and MongoDB. My journey in web development started with a deep curiosity for how things work, and it has evolved into a career where I constantly strive to learn and adapt to new challenges. I thrive in collaborative environments, enjoy solving complex problems, and delivering high-quality solutions. Outside of coding, I stay active, explore new technologies, and contribute to open-source projects."
 ]
 
 // export const SKILLS = [
@@ -142,9 +145,15 @@ export const BIO = [
 
 export const EXPERIENCES = [
   {
+    title: "Full-stack, Training-Internship",
+    company: "GeeksForGeeks",
+    duration: "13-Jul : 6-Oct (2024) ",
+    description: `I recently completed a three-month MERN stack internship at GeeksforGeeks, where I significantly enhanced my development skills. Through hands-on experience and mentorship, I successfully built two substantial projects that deepened my understanding of MongoDB, Express.js, React.js, and Node.js. This internship provided a valuable opportunity to learn from industry experts and grow my abilities as a full-stack developer.`
+  },
+  {
     title: "Fresher",
     company: "No work experiance.",
-    duration: "",
+    duration: "-",
     description: ` While I do not yet have formal industry experience, I have     completed several personal projects demonstrating my dedication and skills. I 
         am eager to contribute with the same level of commitment and drive in a professional environment.`
   }

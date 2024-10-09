@@ -112,41 +112,41 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* //side */}
+      {/* //Sidebar */}
 
         <motion.div className="m-8 flex flex-col item-center justify-center gap-4 text-2xl mt-20 lg:top-5 right-0 lg:right-8 fixed cursor-pointer ">
             <motion.a 
             variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 50 }}
-                transition={{ duration: 3 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 60 }}
+                transition={{ duration: 0.8 }}
              href="https://www.linkedin.com/in/manoj-singh-4a4131280/"
              target="_blank">
                 <FaLinkedin/>
 
             </motion.a>
             <motion.a variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -50 }}
-                transition={{ duration: 3 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 60 }}
+                transition={{ duration: 1.5 }}
                 href="https://github.com/manojsingh00963"
              target="_blank">
             <FaGithub />
 
             </motion.a>
             <motion.a variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 50 }}
-                transition={{ duration: 3 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 60 }}
+                transition={{ duration: 2.5 }}
                 href="https://www.instagram.com/accounts/login/"
              target="_blank">
             <FaInstagramSquare />
             </motion.a>
 
             <motion.a variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -50 }}
-                transition={{ duration: 3 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 60 }}
+                transition={{ duration: 3.5 }}
                 href="https://x.com/manojsingh10101"
              target="_blank">
             <FaXTwitter />

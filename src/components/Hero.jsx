@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import mainImg from '../assets/main.jpg';
 import { HERO } from '../constants/index';
 import { motion } from 'framer-motion';
+import myimg from '../assets/img/MyImg.jpg'
 
 // Function to handle 3D image effect (ATVImage)
 function atvImg() {
@@ -14,8 +15,8 @@ function atvImg() {
       const y = e.clientY - rect.top;
       const offsetX = 0.5 - x / rect.width;
       const offsetY = 0.5 - y / rect.height;
-      const rotateX = offsetY * 20;
-      const rotateY = offsetX * -20;
+      const rotateX = offsetY * 30;
+      const rotateY = offsetX * -30;
       
       img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 
@@ -65,17 +66,17 @@ function Hero() {
           {HERO.name}
         </motion.h2>
 
-        <motion.span
-          variants={container(0.3)}
+        <motion.div
+          variants={container(0.5)}
           initial="hidden"
           animate="visible"
           className="bg-gradient-to-r from-pink-300 via-sky-300 to-purple-500
-              bg-clip-text text-4xl tracking-tight text-transparent ml-40 ">
+              bg-clip-text text-4xl tracking-tight text-transparent text-center md:text-center lg:text-end ">
           Full Stack Developer
-        </motion.span>
+        </motion.div>
 
         <motion.p
-          variants={container(0.5)}
+          variants={container(0.8)}
           initial="hidden"
           animate="visible"
           className='p-2 text-3xl tracking-tighter lg:text-4xl mt-2'>
@@ -105,7 +106,7 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 5 }}
             className='rounded-3xl'
-            src={mainImg} alt="Logo" width={550} height={550} />
+            src={myimg} alt="Logo" width={550} height={550} />
         </div>
       </motion.div>
     </section>
