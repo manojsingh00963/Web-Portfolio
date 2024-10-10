@@ -3,8 +3,7 @@ import mainImg from '../assets/main.jpg';
 import { HERO } from '../constants/index';
 import { motion } from 'framer-motion';
 import myimg from '../assets/img/MyImg.jpg'
-import { IoIosCodeDownload } from "react-icons/io";
-
+import { FcDownload } from "react-icons/fc";
 // Function to handle 3D image effect (ATVImage)
 function atvImg() {
   const imgs = document.querySelectorAll('.atvImg');
@@ -92,9 +91,10 @@ function Hero() {
           className='mb-8 p-2 text-base relative'>
           {HERO.description}
         </motion.p>
-        <a className=' px-2 py-1 flex gap-1 items-center outline-double outline-zinc-300 right-20 bottom-0 absolute ' 
+        <a className=' bg-gradient-to-tl from-gray-600
+         rounded-sm px-1 py-1 flex gap-1 items-center border right-20 bottom-0 absolute ' 
         href="/public/MANOJSINGH full stack devloper.pdf" download="Manojsinghresume.pdf" >
-        My Resume<IoIosCodeDownload/></a>
+        My Resume<FcDownload/></a>
       </motion.div>
 
       <motion.div
