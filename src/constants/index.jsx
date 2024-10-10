@@ -9,7 +9,7 @@ import {
 
 import Dict from "../assets/img/Dict.jpg"
 import Todo from "../assets/img/Todo.jpg"
-import Weather from "../assets/img/Weather.jpg"
+// import Weather from "../assets/img/Weather.jpg"
 import coder from "../assets/img/coder.jpg"
 import Blog from "../assets/img/Blog.jpg"
 import Chat from "../assets/img/Chat.jpg"

@@ -1,26 +1,22 @@
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/Devmanoj.png";
-import { NAVIGATION_LINKS } from "../constants";
-//
-import { FaLinkedin, FaGithub, FaInstagramSquare } from 'react-icons/fa';
-import { FaXTwitter } from "react-icons/fa6";;
-import { motion } from 'framer-motion';;
+import { useState } from 'react';
+import { FaBars, FaTimes, FaLinkedin, FaGithub, FaInstagramSquare } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
+import logo from '../assets/Devmanoj.png';
+import { NAVIGATION_LINKS } from '../constants';
 
 const iconVariants = (duration) => ({
-  inital: { y: -10 },
+  initial: { y: -10 },
   animate: {
-      y: [10, -10],
-      transition: {
-          duration: duration,
-          ease: "linear",
-          repeat: Infinity,
-          repeatType: "reverse",
-
-      }
-  }
-
-})
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: 'linear',
+      repeat: Infinity,
+      repeatType: 'reverse',
+    },
+  },
+});
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,7 +35,7 @@ function Navbar() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     }
     setIsMobileMenuOpen(false);
@@ -53,27 +49,28 @@ function Navbar() {
           <div className="flex items-center justify-between gap-6">
             <div>
               <a href="#">
-             <img src={logo} alt="logo" width={150} />
+                <img src={logo} alt="logo" width={150} />
               </a>
             </div>
             <div>
               <ul className="flex items-center gap-4">
                 {NAVIGATION_LINKS.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="relative group">
                     <a
-                      className="text-sm hover:text-blue-200"
+                      className="text-sm hover:text-violet-400 transition-colors duration-200"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >
                       {item.label}
                     </a>
+                    <span className="absolute left-0 right-0 h-0.5 bg-violet-300 bottom-0 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-        {/* MOBILE Menu */}
+        {/* Mobile Menu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div>
@@ -82,10 +79,7 @@ function Navbar() {
               </a>
             </div>
             <div className="flex items-center">
-              <button
-                className="focus:outline-none lg:hidden"
-                onClick={toggleMobileMenu}
-              >
+              <button className="focus:outline-none" onClick={toggleMobileMenu}>
                 {isMobileMenuOpen ? (
                   <FaTimes className="m-2 h-6 w-5" />
                 ) : (
@@ -112,46 +106,49 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* //Sidebar */}
-
-        <motion.div className="m-8 flex flex-col item-center justify-center gap-4 text-2xl mt-20 lg:top-5 right-0 lg:right-8 fixed cursor-pointer ">
-            <motion.a 
-            variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 60 }}
-                transition={{ duration: 0.8 }}
-             href="https://www.linkedin.com/in/manoj-singh-4a4131280/"
-             target="_blank">
-                <FaLinkedin/>
-
-            </motion.a>
-            <motion.a variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 60 }}
-                transition={{ duration: 1.5 }}
-                href="https://github.com/manojsingh00963"
-             target="_blank">
-            <FaGithub />
-
-            </motion.a>
-            <motion.a variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 60 }}
-                transition={{ duration: 2.5 }}
-                href="https://www.instagram.com/accounts/login/"
-             target="_blank">
-            <FaInstagramSquare />
-            </motion.a>
-
-            <motion.a variants={iconVariants(2.2)}
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 60 }}
-                transition={{ duration: 3.5 }}
-                href="https://x.com/manojsingh10101"
-             target="_blank">
-            <FaXTwitter />
-            </motion.a>
-        </motion.div>
+      {/* Sidebar */}
+      <motion.div className="m-8 flex flex-col items-center justify-center gap-4 text-2xl mt-20 lg:top-5 right-0 lg:right-8 fixed cursor-pointer">
+        <motion.a
+          variants={iconVariants(2.2)}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 60 }}
+          transition={{ duration: 0.8 }}
+          href="https://www.linkedin.com/in/manoj-singh-4a4131280/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </motion.a>
+        <motion.a
+          variants={iconVariants(2.2)}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 60 }}
+          transition={{ duration: 1.5 }}
+          href="https://github.com/manojsingh00963"
+          target="_blank"
+        >
+          <FaGithub />
+        </motion.a>
+        <motion.a
+          variants={iconVariants(2.2)}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 60 }}
+          transition={{ duration: 2.5 }}
+          href="https://www.instagram.com/accounts/login/"
+          target="_blank"
+        >
+          <FaInstagramSquare />
+        </motion.a>
+        <motion.a
+          variants={iconVariants(2.2)}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 60 }}
+          transition={{ duration: 3.5 }}
+          href="https://x.com/manojsingh10101"
+          target="_blank"
+        >
+          <FaXTwitter />
+        </motion.a>
+      </motion.div>
     </div>
   );
 }
