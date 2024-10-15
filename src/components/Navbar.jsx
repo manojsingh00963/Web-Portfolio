@@ -130,6 +130,7 @@ function Navbar({togglemode, darkMode}) {
       {/* Sidebar */}
       <motion.div className="m-8 flex flex-col items-center justify-center gap-4 text-2xl mt-20 lg:top-5 right-0 lg:right-8 fixed cursor-pointer">
         <motion.a
+        className=' hover:text-gray-600 '
           variants={iconVariants(2.2)}
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 60 }}
@@ -140,6 +141,7 @@ function Navbar({togglemode, darkMode}) {
           <FaLinkedin />
         </motion.a>
         <motion.a
+        className=' hover:text-gray-600 '
           variants={iconVariants(2.2)}
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 60 }}
@@ -150,6 +152,7 @@ function Navbar({togglemode, darkMode}) {
           <FaGithub />
         </motion.a>
         <motion.a
+        className=' hover:text-gray-600 '
           variants={iconVariants(2.2)}
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 60 }}
@@ -160,6 +163,7 @@ function Navbar({togglemode, darkMode}) {
           <FaInstagramSquare />
         </motion.a>
         <motion.a
+        className=' hover:text-gray-600 '
           variants={iconVariants(2.2)}
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 60 }}
