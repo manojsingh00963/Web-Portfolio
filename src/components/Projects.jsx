@@ -2,15 +2,16 @@ import { MdArrowOutward } from "react-icons/md";
 import { PROJECTS } from "../constants";
 import { motion } from 'framer-motion';
 
-function Projects() {
+// eslint-disable-next-line react/prop-types
+function Projects({darkMode}) {
   return (
-    <section className="pt-20 border-t  border-b border-neutral-800 pb-20 " id="projects">
+    <section className={`pt-20 border-t  border-b ${darkMode ? "border-slate-500" : "border-neutral-800" } pb-20 " id="projects`}>
       <motion.h2 
       initial={{opacity:0,y:100}}
       whileInView={{opacity:1,y:0}}
       transition={{duration:1}}
-      className="mb-20 text-center text-neutral-400 text-3xl lg:text-4xl">Projects</motion.h2>
-      <div className=" mx-6 text-xs grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+      className={` mb-20 text-center ${darkMode ? "text-neutral-200" : "text-neutral-700" } text-3xl lg:text-4xl`}>Projects</motion.h2>
+      <div className="mx-6 text-xs grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
         {PROJECTS.map((project) => (
           <motion.div
           initial={{opacity:0,scale:0.9}}

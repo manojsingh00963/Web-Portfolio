@@ -45,7 +45,8 @@ const container = (delay) => ({
   }
 });
 
-function Hero() {
+// eslint-disable-next-line react/prop-types
+function Hero({darkMode}) {
   useEffect(() => {
     atvImg();
   }, []);
@@ -62,7 +63,7 @@ function Hero() {
           variants={container(0)}
           initial="hidden"
           animate="visible"
-          className='my-8 p-2 text-1xl font-bold md:text-1xl lg:text-[3rem] '>
+          className='my-8 p-2 text-4xl font-bold md:text-1xl lg:text-[3rem] '>
           {HERO.name}     
         </motion.h2>
 
@@ -91,17 +92,21 @@ function Hero() {
           className='mb-8 p-2 text-base relative'>
           {HERO.description}
         </motion.p>
-        <a className=' bg-gradient-to-tl from-gray-600
-         rounded-sm px-1 py-1 flex gap-1 items-center border right-20 bottom-0 absolute ' 
+        <motion.a
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 3 }}
+         className={` ${darkMode ? "border-zinc-200" : "border-zinc-900"  } text-[8px] px-2 py-2 lg:text-base rounded
+         lg:px-1 lg:py-1 flex gap-1 items-center border bottom-0 right-24 lg:right-20 lg:bottom-0 absolute `} 
         href="/public/MANOJSINGH full stack devloper.pdf" download="Manojsinghresume.pdf" >
-        My Resume<FcDownload/></a>
+        My Resume<FcDownload/></motion.a>
       </motion.div>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 3 }}
-        className=' mx-auto w-2/3 md:w-2/5 lg:p-8'>
+        className=' mt-10 mx-auto w-2/3 md:w-2/5 lg:p-8'>
 
         <div className='flex justify-center atvImg'>
           {/* ATV Image layers for 3D effect */}

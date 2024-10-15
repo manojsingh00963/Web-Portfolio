@@ -1,9 +1,10 @@
 import { EDUCATION } from '../constants';
 import { motion } from 'framer-motion';
 
-export default function EducationSection() {
+// eslint-disable-next-line react/prop-types
+export default function EducationSection({darkMode}) {
   return (
-    <section className='py-8 border-b border-neutral-800 pb-4  ' id="education">
+      <section className={`py-8 border-b ${darkMode ? "border-slate-500" : "border-neutral-800" } pb-4 `} id="education">
     <motion.h1
     whileInView={{opacity:1,y:0}}
     initial={{opacity:0,y:-50}}
@@ -22,7 +23,8 @@ export default function EducationSection() {
          key={index} className="mb-6 p-10">
           <h3 className=' text-xl font-semibold '>{edu.degree}</h3>
           <p className='text-lg'>{edu.institution}</p>
-          <p className='text-sm text-stone-300'>{edu.duration}</p>
+          {/* TODO SOTNE COLOR  */}
+          <p className={`text-sm ${darkMode ? " text-stone-400" : "text-stone-900" } `}>{edu.duration}</p>
           <p className='mt-2'>{edu.description}</p>
         </motion.div>
       ))}

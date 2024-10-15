@@ -22,9 +22,10 @@ const iconVariants = (duration) => ({
 
 })
 
-function SkillSection() {
+// eslint-disable-next-line react/prop-types
+function SkillSection({darkMode}) {
   return (
-    <div className="mx-2 w-full flex flex-col  px-4 py-2 lg:px-20 border-t border-b border-stone-50/30 " id='skills'>
+    <div className={` mx-2 w-full flex flex-col  px-4 py-2 lg:px-20 border-t border-b ${darkMode ? "border-slate-500" : "border-neutral-800" } `} id='skills'>
 
     <div className=" py-10 pd-24 mb-8  " >
       <motion.h1
@@ -41,63 +42,63 @@ function SkillSection() {
           variants={iconVariants(2.2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-3 ">
+          className={`rounded-2xl border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <FaHtml5 className=" text-xl text-orange-600 " />
         </motion.div>
         <motion.div
           variants={iconVariants(2.8)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-3 ">
+          className={`rounded-2xl border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <FaCss3 className=" text-xl text-blue-600 " />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-3 ">
+          className={`rounded-2xl border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <FaJsSquare className=" text-xl text-yellow-500 " />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-3 ">
+          className={`rounded-2xl border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <FaPython className=" text-xl fill-blue-600  " />
         </motion.div>
         <motion.div
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-3 ">
+          className={`rounded-2xl border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <FaNodeJs className=" text-xl text-green-600 " />
         </motion.div>
         <motion.div
           variants={iconVariants(2.7)}
           initial="initial"
           animate="animate"
-          className="rounded-full border-4 border-neutral-800 p-3 ">
+          className={` rounded-full border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <RiReactjsLine className=" text-xl text-cyan-400 " />
         </motion.div>
         <motion.div
           variants={iconVariants(2.6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-3 ">
+          className={`rounded-2xl border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <TbBrandNextjs className=" text-xl text-white-400 " />
         </motion.div>
         <motion.div
           variants={iconVariants(2.3)}
           initial="initial"
           animate="animate"
-          className="rounded-full border-4 border-neutral-800 p-3 ">
+          className={` rounded-full border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <SiExpress className=" text-xl text-white-400 " />
         </motion.div>
         <motion.div
           variants={iconVariants(2.9)}
           initial="initial"
           animate="animate"
-          className=" rounded-full bg-green-950 border-4 border-neutral-800 p-3 ">
+          className={`rounded-full ${darkMode ? "bg-green-950" : "" } border-4 ${darkMode ? "border-slate-400" : "border-neutral-800"} p-3 `}>
           <SiMongodb className=" text-xl text-green-400  " />
         </motion.div>
       </motion.div>

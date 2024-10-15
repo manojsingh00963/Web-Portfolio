@@ -4,6 +4,9 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import logo from '../assets/Devmanoj.png';
 import { NAVIGATION_LINKS } from '../constants';
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { IoSunny } from "react-icons/io5";
+
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -18,7 +21,8 @@ const iconVariants = (duration) => ({
   },
 });
 
-function Navbar() {
+// eslint-disable-next-line react/prop-types
+function Navbar({togglemode, darkMode}) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -57,15 +61,23 @@ function Navbar() {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index} className="relative group">
                     <a
-                      className="text-sm hover:text-violet-400 transition-colors duration-200"
+                      className={` text-sm ${darkMode ? " font-normal " : " font-medium " } ${darkMode ? "hover:text-violet-400" : "hover:text-purple-100" } transition-colors duration-200 `}
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >
                       {item.label}
                     </a>
-                    <span className="absolute left-0 right-0 h-0.5 bg-violet-300 bottom-0 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+                      <span className={`absolute left-0 right-0 h-0.5 ${darkMode ? "bg-violet-300" : "bg-slate-800" } bottom-0 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100`}/>
                   </li>
                 ))}
+              {/* Mode toggle */}
+        <li className=' list-none '>
+          {darkMode ? (
+            <IoSunny onClick={togglemode} className="text-2xl text-neutral-200 cursor-pointer" />
+          ) : (
+            <BsFillMoonStarsFill onClick={togglemode} className="text-2xl text-neutral-900 cursor-pointer" />
+          )}
+        </li>
               </ul>
             </div>
           </div>
@@ -78,7 +90,16 @@ function Navbar() {
                 <img className="m-2" src={logo} alt="logo" width={90} />
               </a>
             </div>
+            
             <div className="flex items-center">
+            {/* Mode toggle */}
+            <li className='list-none mr-4 '>
+                  {darkMode ? (
+                    <IoSunny onClick={togglemode} className="text-2xl text-neutral-200 cursor-pointer" />
+                  ) : (
+                    <BsFillMoonStarsFill onClick={togglemode} className="text-2xl text-neutral-900 cursor-pointer" />
+                  )}
+                </li>
               <button className="focus:outline-none" onClick={toggleMobileMenu}>
                 {isMobileMenuOpen ? (
                   <FaTimes className="m-2 h-6 w-5" />

@@ -3,7 +3,7 @@ import { SOCIAL_MEDIA_LINKS } from '../constants';
 import { motion } from 'framer-motion';
 
 
-export default function Footer() {
+export default function Footer({darkMode}) {
   return (
     <div className='mb-8 mt-20'>
       <div className="flex items-center justify-center">
@@ -22,7 +22,7 @@ export default function Footer() {
           {link.icon}
         </motion.a>))}
       </div>
-      <p className='mt-8 text-center text-sm tracking-wide text-gray-400'>&copy;Copyright-2024. All rights reserved.</p>
+      <p className={`mt-8 text-center text-sm tracking-wide ${darkMode ? "text-gray-200":"text-gray-900"} `}>&copy;Copyright-2024. All rights reserved.</p>
     </div>
   )
 }
