@@ -48,7 +48,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: coder,
-    githubLink: "https://github.com/manojsingh00963/portfolio",
+    githubLink: "https://github.com/manojsingh00963/Web-Portfolio",
   },
   {
     id: 2,
@@ -60,9 +60,9 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    name: "Task Management Tool",
+    name: "Note taking app",
     description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+      "A task management application built with React & context api for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
     image: Todo,
     githubLink: "https://github.com/user/task-management-tool",
   },
@@ -90,14 +90,14 @@ export const PROJECTS = [
     image: Blog,
     githubLink: "https://github.com/user/blog-platform",
   },
-  {
-    id: 6,
-    name: "Chat Application",
-    description:
-      "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: Chat,
-    githubLink: "https://github.com/user/chat-application",
-  },
+  // {
+  //   id: 6,
+  //   name: "Chat Application",
+  //   description:
+  //     "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
+  //   image: Chat,
+  //   githubLink: "https://github.com/user/chat-application",
+  // },
 ];
 
 // export const BIO = [
