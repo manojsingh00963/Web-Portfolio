@@ -1,15 +1,16 @@
 import { useEffect, useRef } from 'react';
 import { GiReturnArrow } from "react-icons/gi";
 
-function BackToTopButton({darkMode}) {
-  const backToTopButtonRef = useRef(null);
+// eslint-disable-next-line react/prop-types
+function BackScroll({darkMode}) {
+  const BackScrollRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
-        backToTopButtonRef.current.style.display = 'block';
+        BackScrollRef.current.style.display = 'block';
       } else {
-        backToTopButtonRef.current.style.display = 'none';
+        BackScrollRef.current.style.display = 'none';
       }
     };
 
@@ -26,7 +27,7 @@ function BackToTopButton({darkMode}) {
 
   return (
     <button
-      ref={backToTopButtonRef}
+      ref={BackScrollRef}
       onClick={handleClick}
       className={`fixed bottom-14 right-1 lg:right-10 p-2 lg:p-3 bg-transparent border ${darkMode ? "text-gray-100" : "text-gray-800" }  ${darkMode ? "border-zinc-100" : "border-zinc-900"} ${darkMode ? "hover:bg-gray-100" : "hover:bg-gray-700"} ${darkMode ? "hover:text-gray-800" : "hover:text-pink-200" } rounded-full hidden`}
     >
@@ -35,4 +36,4 @@ function BackToTopButton({darkMode}) {
   );
 }
 
-export default BackToTopButton;
+export default BackScroll;

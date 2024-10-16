@@ -7,7 +7,7 @@ import WorkExperience from './components/WorkExperience';
 import EducationSection from './components/EducationSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import BackToTopButton from './components/BackToTopButton';
+import BackScroll from './components/BackScroll';
 import { useState } from 'react';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         <EducationSection darkMode={darkMode}  />
         <ContactForm darkMode={darkMode}  />
         <Footer darkMode={darkMode}  />
-        <BackToTopButton darkMode={darkMode}  />
+        <BackScroll darkMode={darkMode}  />
       </div>
     </div>
   );

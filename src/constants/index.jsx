@@ -12,7 +12,7 @@ import Todo from "../assets/img/Todo.jpg"
 // import Weather from "../assets/img/Weather.jpg"
 import coder from "../assets/img/coder.jpg"
 import Blog from "../assets/img/Blog.jpg"
-import Chat from "../assets/img/Chat.jpg"
+// import ChatApp from "../assets/img/Chat.jpg"
 import Ecommerce from "../assets/img/Ecommers.jpg"
 import Weather1 from "../assets/img/Final weather icon_.jpg"
 
@@ -95,7 +95,7 @@ export const PROJECTS = [
   //   name: "Chat Application",
   //   description:
   //     "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-  //   image: Chat,
+  //   image: ChatApp,
   //   githubLink: "https://github.com/user/chat-application",
   // },
 ];
