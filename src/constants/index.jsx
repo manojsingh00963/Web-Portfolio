@@ -9,12 +9,14 @@ import {
 
 import Dict from "../assets/img/Dict.jpg"
 import Todo from "../assets/img/Todo.jpg"
+import BMI from "../assets/img/BMIcalculator.png"
 // import Weather from "../assets/img/Weather.jpg"
 import coder from "../assets/img/coder.jpg"
 import Blog from "../assets/img/Blog.jpg"
 // import ChatApp from "../assets/img/Chat.jpg"
-import Ecommerce from "../assets/img/Ecommers.jpg"
+// import Ecommerce from "../assets/img/Ecommers.jpg"
 import Weather1 from "../assets/img/Final weather icon_.jpg"
+import News from "../assets/img/NewsApp.jpg"
 
 
 // import { RiReactjsLine } from "react-icons/ri";
@@ -35,7 +37,7 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const HERO = {
-  name: "Manoj singh",
+  name: "Manoj Singh",
   greet: "Hello there! 👋🏻",
   description:
     "I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
@@ -52,11 +54,10 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    name: "E-Commerce Platform",
-    description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
-    image: Ecommerce,
-    githubLink: "https://github.com/user/ecommerce-platform",
+    name: "BMI Calculator",
+    description:"A simple BMI Calculator built with HTML, CSS, and JavaScript that allows users to input their weight and height to calculate their Body Mass Index. The result is classified into categories like underweight, normal, overweight, or obesity.",
+    image:BMI,
+    githubLink: "https://github.com/manojsingh00963/JavaScript/tree/main/12_Project's/BMI-Calculator",
   },
   {
     id: 3,
@@ -83,12 +84,20 @@ export const PROJECTS = [
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/Dictionary-App",
   },
   {
-    id: 5,
+    id: 6,
     name: "Blog Platform",
     description:
       "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
     image: Blog,
     githubLink: "https://github.com/user/blog-platform",
+  },
+  {
+    id: 7,
+    name: "News App",
+    description:
+      "RapidNews is a dynamic news application that delivers top global headlines in real-time. With intuitive search and category filters, it offers users quick access to the latest news across various topics.",
+    image: News,
+    githubLink: "https://github.com/manojsingh00963/React_project/tree/main/textutils",
   },
   // {
   //   id: 6,
@@ -150,13 +159,13 @@ export const EXPERIENCES = [
     duration: "13-Jul : 6-Oct (2024) ",
     description: `I recently completed a three-month MERN stack internship at GeeksforGeeks, where I significantly enhanced my development skills. Through hands-on experience and mentorship, I successfully built two substantial projects that deepened my understanding of MongoDB, Express.js, React.js, and Node.js. This internship provided a valuable opportunity to learn from industry experts and grow my abilities as a full-stack developer.`
   },
-  {
-    title: "Fresher",
-    company: "No work experiance.",
-    duration: "-",
-    description: ` While I do not yet have formal industry experience, I have     completed several personal projects demonstrating my dedication and skills. I 
-        am eager to contribute with the same level of commitment and drive in a professional environment.`
-  }
+  // {
+  //   title: "",
+  //   company: "No Industry work experience.",
+  //   duration: "-",
+  //   description: ` While I do not yet have formal industry experience, I have     completed several personal projects demonstrating my dedication and skills. I 
+  //       am eager to contribute with the same level of commitment and drive in a professional environment.`
+  // }
 
   // {
   //   title: "Lead Frontend Developer",
@@ -183,11 +192,11 @@ export const EXPERIENCES = [
 
 export const EDUCATION = [
   {
-    degree: "Bachelor of Computer Aplication ",
+    degree: "Bachelor of Computer Application ",
     institution: "Indira Gandhi National Open University",
-    duration: "june 2022 - (pursuing)",
+    duration: "June 2022 - (pursuing)",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
+      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
   },
 ];
 

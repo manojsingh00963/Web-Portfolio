@@ -21,7 +21,7 @@ function App() {
   return (
     <div
       className={`relative h-full overflow-y-auto antialiased transition-colors duration-500 ease-in-out ${
-        darkMode ? 'bg-gray-800 text-neutral-200' : 'bg-purple-200 text-neutral-900'
+        darkMode ? 'bg-gray-800 text-neutral-200' : 'bg-indigo-100 text-neutral-900'
       }`}
     >
       <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">

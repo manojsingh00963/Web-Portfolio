@@ -128,7 +128,7 @@ function Navbar({togglemode, darkMode}) {
       </nav>
 
       {/* Sidebar */}
-      <motion.div className="m-8 flex flex-col items-center justify-center gap-4 text-2xl mt-20 lg:top-5 right-0 lg:right-8 fixed cursor-pointer">
+      <motion.div className="m-8 flex flex-col items-center justify-center gap-4 text-2xl mt-20 lg:top-5 right-[-20px] lg:right-8 fixed cursor-pointer">
         <motion.a
         className=' hover:text-gray-600 '
           variants={iconVariants(2.2)}
