@@ -1,6 +1,6 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+import ProjectSection from './components/ProjectSection'
 import About from './components/About';
 import SkillSection from './components/SkillSection';
 import WorkExperience from './components/WorkExperience';
@@ -27,7 +27,7 @@ function App() {
       <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
         <Navbar togglemode={togglemode} darkMode={darkMode} />
         <Hero darkMode={darkMode}  />
-        <Projects darkMode={darkMode}  />
+        <ProjectSection darkMode={darkMode} />
         <About darkMode={darkMode}  />
         <SkillSection darkMode={darkMode}  />
         <WorkExperience darkMode={darkMode}  />

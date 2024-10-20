@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 // eslint-disable-next-line react/prop-types
 export default function EducationSection({darkMode}) {
   return (
-      <section className={`py-8 border-b ${darkMode ? "border-slate-500" : "border-neutral-800" } pb-4 `} id="education">
+      <section className={` lg:pb-32 border-b ${darkMode ? "border-slate-500" : "border-neutral-800" } pb-4 `} id="education">
     <motion.h1
     whileInView={{opacity:1,y:0}}
     initial={{opacity:0,y:-50}}
