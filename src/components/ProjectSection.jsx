@@ -37,7 +37,7 @@ export default function ProjectSection({ darkMode }) {
       className={`container mx-auto ${darkMode ? ' text-slate-200' : 'text-neutral-800'} py-20`}
       id='projects'
     >
-      <h2 className={`mb-12 text-center text-4xl tracking-wide ${darkMode ? 'text-neutral-200' : 'text-neutral-800'}`}>
+      <h2 className={`mb-10 text-center text-4xl tracking-wide ${darkMode ? 'text-neutral-200' : 'text-neutral-800'}`}>
         Projects
       </h2>
       <motion.div
@@ -69,6 +69,15 @@ export default function ProjectSection({ darkMode }) {
               >
                 <span className="mr-2">View on Github</span>
                 <MdArrowOutward />
+              </a>
+              <a
+                href={project.livePrivew}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mt-4 ml-4 inline-flex items-center justify-center rounded-full px-2 py-1 text-black ${darkMode ? 'bg-slate-200 hover:bg-slate-300' : 'bg-slate-800 text-white hover:bg-gray-400'} transition-all duration-300 ease-in-out`}
+              >
+              <span className="mr-2">Live Preview</span>
+              <MdArrowOutward />
               </a>
             </div>
           </motion.div>

@@ -50,6 +50,7 @@ export const PROJECTS = [
     description:"A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: coder,
     githubLink: "https://github.com/manojsingh00963/Web-Portfolio",
+    livePrivew:"https://i-manoj-web-portfolio.vercel.app/"
   },
   {
     id: 2,
@@ -57,54 +58,71 @@ export const PROJECTS = [
     description:"A simple BMI Calculator built with HTML, CSS, and JavaScript that allows users to input their weight and height to calculate their Body Mass Index. The result is classified into categories like underweight, normal, overweight, or obesity.",
     image:BMI,
     githubLink: "https://github.com/manojsingh00963/JavaScript/tree/main/12_Project's/BMI-Calculator",
+    livePrivew:"https://stackblitz.com/edit/stackblitz-starters-wxujky?file=04_BMI-Calculator%2Findex.html"
   },
   {
     id: 3,
     name: "Note taking app",
     description:
-      "A task management application built with React & context api for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+    "A task management application built with React & context api for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
     image: Todo,
     githubLink: "https://github.com/user/task-management-tool",
+    livePrivew:"https://blog-app-psi-three-96.vercel.app/"
   },
   {
     id: 4,
     name: "Weather App",
     description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+    "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
     image: Weather1,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/My-Weather_App",
+    livePrivew:"https://weatherfinder-three.vercel.app/"
   },
   {
     id: 5,
     name: "Dictionary App",
     description:
-      "A weather application that utilizes the Dictionary API to retrieve and present current weather data and forecasts for diverse locations, developed using React and styled-components.",
+    "A weather application that utilizes the Dictionary API to retrieve and present current weather data and forecasts for diverse locations, developed using React and styled-components.",
     image: Dict,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/Dictionary-App",
+    livePrivew:"https://my-word-dictionary.vercel.app/"
   },
   {
     id: 6,
-    name: "Blog Platform",
+    name: "Blog App",
     description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+      "A blogging platform developed with react and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
     image: Blog,
-    githubLink: "https://github.com/user/blog-platform",
+    githubLink: "https://github.com/manojsingh00963/Blog-app",
+    livePrivew:"https://blog-app-psi-three-96.vercel.app/"
+    
   },
   {
     id: 7,
     name: "News App",
     description:
-      "RapidNews is a dynamic news application that delivers top global headlines in real-time. With intuitive search and category filters, it offers users quick access to the latest news across various topics.",
+    "RapidNews is a dynamic news application that delivers top global headlines in real-time. With intuitive search and category filters, it offers users quick access to the latest news across various topics.",
     image: News,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/textutils",
+    livePrivew:"https://github.com/manojsingh00963/React_project/tree/main/textutils"
+  },
+  {
+    id: 8,
+    name: "News App",
+    description:
+    "RapidNews is a dynamic news application that delivers top global headlines in real-time. With intuitive search and category filters, it offers users quick access to the latest news across various topics.",
+    image: News,
+    githubLink: "https://github.com/manojsingh00963/React_project/tree/main/textutils",
+    livePrivew:"https://mern-forntend-phi.vercel.app/"
   },
   // {
-  //   id: 6,
-  //   name: "Chat Application",
-  //   description:
-  //     "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-  //   image: ChatApp,
-  //   githubLink: "https://github.com/user/chat-application",
+    //   id: 6,
+    //   name: "Chat Application",
+    //   description:
+    //     "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
+    //   image: ChatApp,
+    //   githubLink: "https://github.com/user/chat-application",
+    // livePrivew:"https://blog-app-psi-three-96.vercel.app/"
   // },
 ];
 

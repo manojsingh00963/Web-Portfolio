@@ -53,7 +53,7 @@ function Navbar({togglemode, darkMode}) {
           <div className="flex items-center justify-between gap-6">
             <div>
               <a href="#">
-                <img src={logo} alt="logo" width={150} />
+                <img src={logo} alt="logo" width={100} />
               </a>
             </div>
             <div>

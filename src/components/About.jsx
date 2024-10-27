@@ -9,7 +9,7 @@ export default function About({darkMode}) {
         whileInView={{ opacity: 1, z: 1 }}
         initial={{ opacity: 0, z: -100 }}
         transition={{ duration: 10 }}
-        className="my-20 text-center text-4xl">
+        className="my-10 text-center text-4xl">
         About<span className={` ${darkMode ? "text-neutral-500" : "text-neutral-700"}  `}> Me</span>
       </motion.h1>
       <motion.div
