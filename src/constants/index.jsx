@@ -17,6 +17,7 @@ import Blog from "../assets/img/Blog.jpg"
 // import Ecommerce from "../assets/img/Ecommers.jpg"
 import Weather1 from "../assets/img/Final weather icon_.jpg"
 import News from "../assets/img/NewsApp.jpg"
+import FoodApp from "../assets/img/foodapp.png"
 
 
 // import { RiReactjsLine } from "react-icons/ri";
@@ -108,10 +109,10 @@ export const PROJECTS = [
   },
   {
     id: 8,
-    name: "News App",
+    name: "A Food Delivery App",
     description:
-    "RapidNews is a dynamic news application that delivers top global headlines in real-time. With intuitive search and category filters, it offers users quick access to the latest news across various topics.",
-    image: News,
+    "Responsive food delivery app built with the MERN stack, making it easy for users to browse menus, customize orders, and track deliveries in real-time. Enjoy a seamless experience for satisfying cravings anytime, anywhere.",
+    image: FoodApp,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/textutils",
     livePrivew:"https://mern-forntend-phi.vercel.app/"
   },
