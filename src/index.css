@@ -24,3 +24,13 @@ body{
 .bg-img{
 background-image: url(../src/assets/bg-img4.png);
 }
+
+::selection{
+  color:red;
+  background-color: black;
+}
+
+/* ::selection{
+  color:#1F2937;
+  background-color: white;
+} */
