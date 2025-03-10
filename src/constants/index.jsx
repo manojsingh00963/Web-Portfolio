@@ -9,7 +9,7 @@ import {
 
 import Dict from "../assets/img/Dict.jpg"
 import Todo from "../assets/img/Todo.jpg"
-import BMI from "../assets/img/BMIcalculator.png"
+// import BMI from "../assets/img/BMIcalculator.png"
 // import Weather from "../assets/img/Weather.jpg"
 import coder from "../assets/img/coder.jpg"
 import Blog from "../assets/img/Blog.jpg"
@@ -18,6 +18,8 @@ import Blog from "../assets/img/Blog.jpg"
 import Weather1 from "../assets/img/Final weather icon_.jpg"
 import News from "../assets/img/NewsApp.jpg"
 import FoodApp from "../assets/img/foodapp.png"
+import Icode from '../assets/img/icodesave.avif'
+import Jsproject from '../assets/img/jsprob.png'
 
 
 // import { RiReactjsLine } from "react-icons/ri";
@@ -55,17 +57,17 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    name: "BMI Calculator",
-    description:"A simple BMI Calculator built with HTML, CSS, and JavaScript that allows users to input their weight and height to calculate their Body Mass Index. The result is classified into categories like underweight, normal, overweight, or obesity.",
-    image:BMI,
-    githubLink: "https://github.com/manojsingh00963/JavaScript/tree/main/12_Project's/BMI-Calculator",
-    livePrivew:"https://stackblitz.com/edit/stackblitz-starters-wxujky?file=04_BMI-Calculator%2Findex.html"
+    name: "JavaScript Project's",
+    description:"My JavaScript All Project BMI-Calculator, GuessNumber-Game Color-Changer and more.",
+    image:Jsproject,
+    githubLink: "https://github.com/manojsingh00963/JavaScript/tree/main/12_Project's",
+    livePrivew:"https://stackblitz.com/edit/stackblitz-starters-wxujky?file=page2.html"
   },
   {
     id: 3,
     name: "Note taking app",
     description:
-    "A task management application built with React & context api for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+    "A FullStack Note taking app with React & context api for frontend and NodeJs ExpressJs and MongoDb for backend ",
     image: Todo,
     githubLink: "https://github.com/user/task-management-tool",
     livePrivew:"https://blog-app-psi-three-96.vercel.app/"
@@ -115,6 +117,15 @@ export const PROJECTS = [
     image: FoodApp,
     githubLink: "https://github.com/manojsingh00963/React_project/tree/main/textutils",
     livePrivew:"https://mern-forntend-phi.vercel.app/"
+  },
+  {
+    id: 9,
+    name: " ICODESAVE ",
+    description:
+    "A note book for saving note, i made it for saving my some important notes concepts and mainly important code, and some code snipptes which i would be need again in the future so that i made this app it's amagazing feel free to use it ",
+    image:Icode,
+    githubLink: "https://github.com/manojsingh00963/ICODESAVE",
+    livePrivew:"https://icodesave.vercel.app/"
   },
   // {
     //   id: 6,
