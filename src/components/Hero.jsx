@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import mainImg from '../assets/main.jpg';
 import { HERO } from '../constants/index';
 import { motion } from 'framer-motion';
-import myimg from '../assets/img/MyImg.jpg'
+import myimg from '../assets/img/developermanics.png'
 import { FcDownload } from "react-icons/fc";
 // Function to handle 3D image effect (ATVImage)
 function atvImg() {
