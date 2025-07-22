@@ -64,6 +64,14 @@ export const PROJECTS = [
     livePrivew:"https://stackblitz.com/edit/stackblitz-starters-wxujky?file=page2.html"
   },
   {
+    id: 10,
+    name: "Basic Project's",
+    description:"Some of basic projects i built just for fun with HTML, CSS, and JavaScript.",
+    image:Jsproject,
+    githubLink: "https://github.com/manojsingh00963/Basic-Project-s",
+    livePrivew:"https://manojsingh00963.github.io/Basic-Project-s/"
+  },
+  {
     id: 3,
     name: "Note taking app",
     description:
